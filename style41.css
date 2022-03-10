@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  padding: 3vmin 6vmin 0vmin 6vmin;
+  background-color: #eee;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+p, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 3vmin;
+  line-height: 5vmin;
+  letter-spacing: -0.05em;
+  word-spacing: 0.2em;
+}
+
+h1 {
+  font-size: 6vmin;
+}
+
+.mainGrid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 2.5vmin;
+  grid-row-gap: 6vmin;
+}
+
+.mainGrid * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.fullWidth {
+  grid-column-end: span 8;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 2vmin 5vmin 2vmin 5vmin;
+  margin-bottom: 1vmin;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu a {
+  /* text-transform: uppercase; */
+  font-weight: bolder;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  grid-row-end: span 3;
+  background-image: url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iq2nVpREcxFo/v0/1200x-1.jpg');
+  background-position: center;
+  background-size: cover;
+  justify-self: stretch;
+}
+.words{
+  position: absolute;
+  text-align: right;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 35px;
+  top:80%;
+  left:15%;
+  width:80%;
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  color: #eee;
+  height: 200px;
+}
+
+.breaker {
+  border-bottom: 1vmin solid #222;
+}
+
+.introArtist{
+  /* position: absolute; */
+  text-align: right;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 35px;
+  top:20%;
+  left:15%;
+  width:80%;
+  color: black;
+
+}
+
+.item-4x2 {
+  grid-column-end: span 4;
+  font-size: 25px;
+  font-weight: bolder;
+  /* grid-row-end: span 0; */
+}
+
+.item-4x4 {
+  grid-column-end: span 4;
+  grid-row-end: span 0.5;
+}
+
+.item-2x4 {
+  grid-column-end: span 2;
+  grid-row-end: span 0.5;
+}
+
+.item-2x1 {
+  grid-column-end: span 4;
+  grid-row-end: span 2;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.wide-img {
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alegreya+Sans:wght@500&display=swap');
